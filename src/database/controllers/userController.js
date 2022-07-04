@@ -1,31 +1,16 @@
-const express = require('express');
-const { User } = require('../models');
-const router = express.Router();
+const userServices = require('../services/userService')
 
-// Este endpoint usa o método findAll do Sequelize para retorno todos os users.
-router.get('/', async (_req, res) => {
+const createUser = async  (req, res) => {
   try {
-    const users = await User.findAll();
-
-    return res.status(200).json(users);
-  } catch (e) {
-    console.log(e.message);
-    res.status(500).json({ message: 'Algo deu errado' });
-  };
-});
-
-router.post('/', async (req, res) => {
-  try {
-    const { taskContent } = req.body;
-    const newTask = await User.create({ taskContent });
+    const { username, email, password } = req.body;
+    const newUser = await userServices.createUser(username, email, password);
 
     return res.status(201).json(newUser);
   } catch (e) {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-// ...
 
-module.exports = router;
+module.exports = {createUser};
