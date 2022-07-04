@@ -9,13 +9,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       ownerId: {
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       taskContent: {
         type: Sequelize.STRING
       },
       tastStatus: {
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
