@@ -1,11 +1,13 @@
 
 const express = require('express');
 const userRouter = require('./database/routers/userRouter');
+const taskRouter = require('./database/routers/taskRouter');
 
 const app = express();
 app.use(express.json());
 
 app.use('/', userRouter);
+app.use('/task', taskRouter);
 
 // ...
 

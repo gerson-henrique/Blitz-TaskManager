@@ -1,21 +1,16 @@
-const express = require('express');
-const { Tasks } = require('../models');
-const router = express.Router();
+const taskService = require('../services/taskServices')
 
-router.post('/', async (req, res) => {
+const createTask = async  (req, res) => {
   try {
-    const { id } = req.body;
-    const tasks = await Tasks.findAll({
-      where: {
-        id: { id }
-      }
-    });
+    const { taskContent, ownerId,taskStatus } = req.body;
+    const NewTask = await taskService.createTask(taskContent, ownerId,taskStatus);
 
-    return res.status(200).json(tasks);
+    return res.status(201).json(NewTask);
   } catch (e) {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
-  };
-});
+  }
+};
 
-module.exports = router;
+
+module.exports = {createTask};

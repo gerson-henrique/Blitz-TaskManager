@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   Task.init({
     ownerId: DataTypes.NUMBER,
     taskContent: DataTypes.STRING,
-    tastStatus: DataTypes.NUMBER
+    taskStatus: DataTypes.NUMBER
   }, {
     sequelize,
     modelName: 'Task',

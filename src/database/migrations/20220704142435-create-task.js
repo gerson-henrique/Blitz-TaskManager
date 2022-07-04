@@ -14,7 +14,7 @@ module.exports = {
       taskContent: {
         type: Sequelize.STRING
       },
-      tastStatus: {
+      taskStatus: {
         type: Sequelize.INTEGER
       },
       createdAt: {
