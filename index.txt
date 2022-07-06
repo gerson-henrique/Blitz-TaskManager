@@ -1,0 +1,68 @@
+* Indispensavel 
+** Diferencial
+*** Não essencial no momento
+
+Internet : 
+  Como a a internet funciona**
+  HTTP:
+    Teoria*
+    Pratica*
+  Como os navegaroes funcionam*
+  DNS*
+ Frontend Basics:
+  HTML***
+  CSS***
+  JS*
+ Package Manager*
+ Git*
+ DB:
+  Banco de Dados Relacionais*
+   PostgreSQL*
+   MySQL**
+  Banco de Dados Não Relacionais*
+    PostgreSQL*
+    MySQL**
+  Plus**:
+    ORM
+    ACID
+    Transações
+    Problema N+1
+    Normalização
+    Replicação de dados
+    Fraguimentação
+    CAP (teorema)
+API: 
+  HATEOAS
+  SWAGGER
+  Open API Spec
+  Autenticação:
+      OAuth*
+      JWT**
+Caching: 
+  Server SIde    
+  Redis*
+Segurança* :
+  HTTPS
+  CORS
+  SSL/TLS
+  OWASP top 10
+  Algoritimos de Hashing
+  por que não usar MD5
+Piramide de Testes*
+CI/CD*
+Design de Desenvolvimento*
+Padrões de Arquitetura*
+Motor de Busca*
+Message Brokers:
+  RabbitMQ*
+Docker*
+GraphQL*
+BD orientados a grafos:
+  Neo4j*
+WebSockets*
+Web Servers*
+Escalabilidade**
+
+    
+   
+    
