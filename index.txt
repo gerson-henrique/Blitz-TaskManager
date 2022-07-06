@@ -7,7 +7,7 @@ Internet :
   HTTP:
     Teoria*
     Pratica*
-  Como os navegaroes funcionam*
+  Como os navegadores funcionam*
   DNS*
  Frontend Basics:
   HTML***
